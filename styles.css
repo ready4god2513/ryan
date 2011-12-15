@@ -1,0 +1,60 @@
+div.container
+{
+	background:#fff;
+	margin:20px auto 20px auto;
+	width: 867px;
+}
+
+body
+{
+	background:#fff;
+}
+
+#left-pics
+{
+	float:left;
+}
+
+#right-pics
+{
+	float:right;
+}
+
+#left-pics img
+{
+	margin:0 10px 10px 0;
+}
+
+#left-pics img:last-child
+{
+	margin:0 10px 6px 0;
+}
+
+#right-pics img
+{
+	margin:0 0 10px 0;
+}
+
+#right-bottom img
+{
+	display:inline-block;
+	margin:0 6px 6px 0;
+}
+
+footer
+{
+	background:pink;
+	margin:0 5px 0 0;
+	padding:10px;
+	text-align:center;
+}
+
+.clear
+{
+	clear:both;
+}
+
+img
+{
+	display:block;
+}
