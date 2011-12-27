@@ -1,9 +1,14 @@
 div.container
 {
 	background:#fff;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	box-shadow: 0 0 10px 1px #292929;
 	margin:20px auto 20px auto;
-	width: 867px;
-}
+	width: 861px;
+	}
 
 body
 {
@@ -20,9 +25,19 @@ body
 	float:right;
 }
 
+#main
+{
+	border-top-right-radius: 10px;
+}
+
 #left-pics img
 {
 	margin:0 10px 10px 0;
+}
+
+#left-pics img:first-child
+{
+	border-top-left-radius: 10px;	
 }
 
 #left-pics img:last-child
@@ -38,13 +53,23 @@ body
 #right-bottom img
 {
 	display:inline-block;
-	margin:0 6px 6px 0;
+	float:right;
+	margin:0 0px 10px 0;
+}
+
+#right-bottom img:last-child
+{
+	margin: 0 10px 0 0;
 }
 
 footer
 {
-	background:pink;
-	margin:0 5px 0 0;
+	/*background-color:rgb(28,134,238); */
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	border-top:1px dashed rgba(0,0,0,.45);
+	height:110px;
+	margin:0;
 	padding:10px;
 	text-align:center;
 }
@@ -58,3 +83,15 @@ img
 {
 	display:block;
 }
+
+.row a:hover:after
+{
+	background: rgba(0,0,0,0.65);
+	color:#fff;
+	content: attr(title);
+	font-weight:bold;
+	height:50px;
+	position: absolute;
+	text-align:center;
+}
+
