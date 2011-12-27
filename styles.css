@@ -8,7 +8,7 @@ div.container
 	box-shadow: 0 0 10px 1px #292929;
 	margin:20px auto 20px auto;
 	width: 861px;
-	}
+}
 
 body
 {
@@ -53,7 +53,6 @@ body
 #right-bottom img
 {
 	display:inline-block;
-	float:right;
 	margin:0 0px 10px 0;
 }
 
@@ -84,14 +83,27 @@ img
 	display:block;
 }
 
-.row a:hover:after
+a
 {
-	background: rgba(0,0,0,0.65);
 	color:#fff;
-	content: attr(title);
-	font-weight:bold;
-	height:50px;
-	position: absolute;
-	text-align:center;
+	position:relative;
 }
 
+a h4
+{
+	background:rgba(0,0,0,0.9);
+	padding:10px 50px;
+	display:none;
+	position:absolute;
+	width:200px;
+}
+
+a:hover h4
+{
+	display:block;
+}
+
+a:hover img
+{
+	opacity:0.4;
+}
