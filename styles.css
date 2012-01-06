@@ -1,11 +1,44 @@
 body
 {
 	background:url(http://subtlepatterns.com/patterns/fabric_plaid.png) repeat;
-	border-top:5px solid rgb(250, 195, 206);
 	height:100%;
 	font-family: 'Arizonia', cursive;
 	padding:0;
 	margin:0 auto;
+}
+
+img
+{
+	background:#fff;
+	display:block;
+	box-shadow: 0 0 5px 1px #999;
+	margin:0;
+	padding:2px;
+}
+
+a
+{
+	color:#fff;
+	position:relative;
+}
+
+a h4
+{
+	background:rgba(0,0,0,0.9);
+	padding:10px 50px;
+	display:none;
+	position:absolute;
+	width:200px;
+}
+
+a:hover h4
+{
+	display:block;
+}
+
+a:hover img
+{
+	opacity:0.4;
 }
 
 div.container
@@ -24,6 +57,18 @@ div#main-content
 {
 	margin:0 auto 50px auto;
 	padding:0;
+}
+
+#inside-pages #main-content
+{
+	background:#fff;
+	box-shadow: 0 0 5px 1px #999;
+	min-height:500px;
+}
+
+#inside-pages #main-content .row
+{
+	padding:20px;
 }
 
 #left-pics
@@ -72,41 +117,15 @@ footer
 	text-align:center;
 }
 
+footer h1
+{
+	color:rgb(125, 167, 217);
+	font-size:3em;
+	letter-spacing:5px;
+	text-shadow: #fff 2px 2px 0;
+}
+
 .clear
 {
 	clear:both;
-}
-
-img
-{
-	background:#fff;
-	display:block;
-	box-shadow: 0 0 5px 1px #999;
-	margin:0;
-	padding:2px;
-}
-
-a
-{
-	color:#fff;
-	position:relative;
-}
-
-a h4
-{
-	background:rgba(0,0,0,0.9);
-	padding:10px 50px;
-	display:none;
-	position:absolute;
-	width:200px;
-}
-
-a:hover h4
-{
-	display:block;
-}
-
-a:hover img
-{
-	opacity:0.4;
 }
