@@ -2,7 +2,9 @@ body
 {
 	background:url(http://subtlepatterns.com/patterns/fabric_plaid.png) repeat;
 	height:100%;
+	font-size:0.9em;
 	font-family: 'Arizonia', cursive;
+	line-height:2em;
 	padding:0;
 	margin:0 auto;
 }
@@ -48,7 +50,7 @@ div.container
 	width: 868px;
 }
 
-header, footer p, a
+header, p, a
 {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -57,7 +59,7 @@ header, footer p, a
 {
 	background:#fff;
 	box-shadow: 0 0 5px 1px #999;
-	min-height:100px;
+	display:none;
 }
 
 .guts

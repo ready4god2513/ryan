@@ -5,7 +5,15 @@ $(function(){
 			url: $(this).attr("href"),
 			success: function(data)
 			{
-				$("#body-content .guts").html(data);
+				$("#body-content").slideUp("normal", function(){
+					$("#body-content .guts").html(data);
+					$("#body-content").slideDown("normal", function(){
+						$("body").scrollTo(".guts", 800);
+					});
+				});
+				
+				
+				
 			}
 		});
 		
