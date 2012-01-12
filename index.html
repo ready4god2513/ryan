@@ -77,12 +77,20 @@
 		</div>
 	</div>
 	
-
-
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-	<script src="assets/scroll.js"></script>
+	<script src="assets/modernizr.js"></script>
 	<!-- JavaScript -->
-	<script src="assets/wufoo/scripts/wufoo.js"></script>
-	<script src="assets/main.js"></script>
+	<script>
+		Modernizr.load([
+			{
+				load: '//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js'
+			},
+			{
+				load: 'assets/scroll.js'
+			},
+			{
+  				load: 'assets/main.js'
+			}
+		]);
+	</script>
 </body>
 </html>
