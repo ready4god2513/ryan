@@ -1,3 +1,7 @@
+@import url("wufoo/css/structure.css");
+@import url("wufoo/css/theme.css");
+@import url("wufoo/css/form.css");
+
 body
 {
 	background:url(sp4.jpg) repeat;
@@ -67,6 +71,11 @@ header, p, a
 	padding:20px;
 }
 
+#bottom
+{
+	display:none !important;
+}
+
 .guts h1
 {
 	text-align:center;
@@ -120,7 +129,7 @@ footer
 
 footer h1
 {
-	color:rgb(125, 167, 217);
+	color:#639;
 	font-size:3em;
 	letter-spacing:5px;
 	text-shadow: #fff 2px 2px 0;
