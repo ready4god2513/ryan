@@ -1,6 +1,6 @@
 body
 {
-	background:url(fabric_plaid.png) repeat;
+	background:url(sp4.jpg) repeat;
 	height:100%;
 	font-size:0.9em;
 	font-family: 'Arizonia', cursive;
@@ -67,6 +67,12 @@ header, p, a
 	padding:20px;
 }
 
+.guts h1
+{
+	text-align:center;
+	text-decoration:underline;
+}
+
 #left-pics
 {
 	float:left;
@@ -105,11 +111,11 @@ header, p, a
 
 footer
 {
-	border-bottom-left-radius: 10px;
-	border-bottom-right-radius: 10px;
+	background:#fff;
+	box-shadow: 0 0 5px 1px #999;
 	margin:0;
-	padding:10px;
 	text-align:center;
+	padding:10px;
 }
 
 footer h1
@@ -124,3 +130,4 @@ footer h1
 {
 	clear:both;
 }
+
