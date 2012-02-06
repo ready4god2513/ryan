@@ -1,6 +1,4 @@
 $(function(){
-
-	
 	
 	$("#registries").addClass("animated bounceInLeft").css("display", "block");
 	
@@ -19,5 +17,5 @@ $(function(){
 	setTimeout(function(){
 		$("#directions").addClass("animated bounceInDown").css("display", "block");
 	}, 1200);
-
+	
 });
