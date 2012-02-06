@@ -10,52 +10,46 @@
 
 	<title>Marriage is what brings us together today</title>
 	<meta name="description" content="">
+	<link rel="shortcut icon" href="assets/ryan.ico">
 	<meta name="author" content="Desperate for Money">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<link href='http://fonts.googleapis.com/css?family=Arizonia' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="styles.css">
+	<link href='http://fonts.googleapis.com/css?family=Sofia' rel='stylesheet' type='text/css'>	
+	<link rel="stylesheet" href="assets/styles.css">
 </head>
 
 <body>
 
-	<div class="container">
-		<header>
-			<div class="row">
-				<p>Check it out below..</p>
-			</div>
-		</header>
-	</div>
-	
 	<div id="home-content" class="container">
 		<div class="row">
 			
 			<div id="left-pics">
-				<a class="links" href="registries.html" title="Registries">
+				<a class="links" href="registries3.html" title="Registries">
 					<h4>Registries</h4>
-					<img id="registries-img" src="pictures/left-top.jpg" alt="" />	
+					<img class="front-pics" src="pictures/left-top.jpg" alt="" />	
 				</a>
 				
 				
-				<a class="links" href="rsvp.html" title="RSVP">
+				<a class="links" href="rsvp2.html" title="RSVP">
 					<h4>RSVP</h4>
-					<img src="pictures/left-bottom2.jpg" alt="" />	
+					<img class="front-pics" src="pictures/left-bottom2.jpg" alt="" />	
 				</a>
 				
 			</div>
 			
 			<div id="right-pics">
-				<a class="links" href="letter.html" title="Letter To All">
-					<h4>Letter To All</h4>
-					<img id="main" src="pictures/main.jpg" alt="" />	
+				<a class="links" href="reception.html" title="Reception Details">
+					<h4>Reception Details</h4>
+					<img class="front-pics" src="pictures/main.jpg" alt="" />	
 				</a>
 				
 							
 				<div id="right-bottom">
-					<img src="pictures/right-bottom2a.jpg" />
+					<img class="front-pics" src="pictures/right-bottom2a.jpg" />
 					
 					<a class="links" href="directions.html" title="Directions">
 						<h4>Directions</h4>
-						<img src="pictures/right-bottom1.jpg" alt="" />
+						<img class="front-pics" src="pictures/right-bottom1.jpg" alt="" />
 					</a>
 				</div>
 				<div class="clear"></div>
@@ -75,15 +69,36 @@
 	<div class="container clear">
 		<div class="row">
 			<footer>
-				<h1>Krystyna and Ryan</h1>
-				<p>Want to buy you dinner.  So come to their party thing.</p>
+				<div id="footer_name">
+					<h1>Krystyna and Ryan</h1>
+					<p>Come Celebrate the Marriage of Ryan Staten Wood and Krystyna Marie Wood. </p>
+				</div>
+
+				<div class="pagebreak"></div>
+				<div id="church_address">
+					<h1 id="church_name">Trinity Alliance Church</h1>
+					<p>20639 State Highway 299 E</p>
+					<p>Redding, CA 96003</p>
+					<p>Reception Will Follow</p>
+				</div>
 			</footer>
 		</div>
 	</div>
 	
-
-
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-	<script src="main.js"></script>
+	<script src="assets/modernizr.js"></script>
+	<!-- JavaScript -->
+	<script>
+		Modernizr.load([
+			{
+				load: '//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js'
+			},
+			{
+				load: 'assets/scroll.js'
+			},
+			{
+  				load: 'assets/main.js'
+			}
+		]);
+	</script>
 </body>
 </html>

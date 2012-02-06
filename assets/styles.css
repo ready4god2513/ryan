@@ -1,0 +1,309 @@
+@import url("wufoo/css/structure.css");
+@import url("wufoo/css/theme.css");
+@import url("wufoo/css/form.css");
+
+
+body
+{
+	background:url(sp4.jpg) repeat;
+	height:100%;
+	font-size:0.9em;
+	font-family: 'Arizonia', cursive;
+	line-height:2em;
+	padding:0;
+	margin:0 auto;
+}
+
+img.front-pics
+{
+	background:#fff;
+	display:block;
+	box-shadow: 0 0 5px 1px #999;
+	margin:0;
+	padding:2px;
+}
+
+a
+{
+	color:#fff;
+	position:relative;
+}
+
+a h4
+{
+	background:rgba(0,0,0,0.9);
+	padding:10px 50px;
+	display:none;
+	position:absolute;
+	width:200px;
+}
+
+a:hover h4
+{
+	display:block;
+}
+
+a:hover img.front-pics
+{
+	opacity:0.4;
+}
+
+div.container
+{
+	margin:50px auto;
+	padding:0;
+	width: 868px;
+}
+
+header, p, a
+{
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#body-content
+{
+	background:#fff;
+	box-shadow: 0 0 5px 1px #999;
+	display:none;
+}
+
+.guts
+{
+	padding:20px;
+}
+
+#bottom
+{
+	display:none !important;
+}
+
+.guts h1
+{
+	text-align:center;
+	text-decoration:underline;
+}
+
+#left-pics
+{
+	float:left;
+}
+
+#right-pics
+{
+	float:right;
+}
+
+#left-pics img
+{
+	margin:0 10px 10px 0;
+}
+
+#left-pics > img:last-child
+{
+	margin:0 10px 10px 0;
+}
+
+#right-pics img
+{
+	margin:0 0 10px 0;
+}
+
+#right-bottom img
+{
+	float:left;
+	margin:0 6px 10px 0;
+}
+
+#right-bottom img:last-child
+{
+	margin-right:0;
+}
+
+
+footer
+{
+	background:#fff;
+	box-shadow: 0 0 5px 1px #999;
+	margin:auto;
+	text-align:center;
+	padding:10px;
+	width:70%;
+}
+
+footer h1
+{
+	color:#639;
+	font-size:3em;
+	letter-spacing:5px;
+	
+}
+
+#footer_name
+{
+	margin-bottom:40px;
+}
+
+#church_name
+{
+	font-size:2em;
+}
+
+footer p
+{
+	font-family: 'Sofia', cursive;
+	font-size:1.2em;
+	line-height:4px;
+}
+
+br
+{
+	line-height:5px;
+}	
+
+
+.clear
+{
+	clear:both;
+}
+
+
+
+/* Reception Details */
+
+#reception_details h3
+{
+	color:#f90;
+	font-size:1.4em;
+	font-weight:bold;
+	text-decoration:underline;
+	
+}
+
+#reception_details p
+{
+	text-indent:50px;
+}
+
+#reception_details li
+{
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	line-height:1.4em;
+}
+
+
+/* Directions page */
+
+label
+{
+	color:#f90;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-weight:bold;
+}
+
+
+/* Reg page */
+
+.reg-float
+{
+	float:left;
+} 
+
+.reg-links
+{
+	color:#639;
+}
+ 
+.organizations
+{
+	display:inline-block;
+	float:left;
+	width:66%;
+}
+
+#target1
+{
+	width:180px;
+}
+
+.figure
+{
+	float:right;
+}
+
+#img-box p
+{
+	display:block;
+}
+
+#lower
+{
+	position:relative;
+	margin-top:50px;
+}
+
+.logolinks
+{
+	color:#639;
+	font-size:12px;
+	vertical-align:bottom;
+	text-align:center;
+}
+
+.reg-text
+{
+	color:#639;
+	display:inline-block;
+}
+
+div.img-box
+{
+	border-left: 4px solid #E2E2E2;
+	border-right: 4px solid #E2E2E2;
+	display: inline-block;
+	float:right;
+	margin:5px 0 50px 0;
+	text-align:center;
+	width:25%;
+} 
+
+
+ /* RSVP */
+
+ .smaller
+{
+	border-left: 6px solid #E2E2E2;
+	border-right: 6px solid #E2E2E2;
+	height:404px;
+	margin:auto;
+	padding:5px;
+	width:70%;
+}
+
+#RSVP_Bar h1 
+{
+	
+	color: #f90;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size:2em;
+	text-decoration:none;
+}
+
+#RSVP_Bar h1 span
+{
+	border-left: 2px solid #000;
+  	border-right: 2px solid #000;
+	color:#639;
+	display: inline-block;
+  	font-family: Arizonia, cursive;
+  	font-size:1.2em;
+  	margin: 0 18px;
+  	padding: 0 10px;
+}
+
+
+.pagebreak
+{
+	border-top: 1px dotted #A9A9A9;
+	position:relative;
+}
+
