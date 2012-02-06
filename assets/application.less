@@ -1,0 +1,95 @@
+@import "bootstrap/less/bootstrap";
+
+body
+{
+	background: url("../../sp4.jpg") repeat;
+}
+
+h1, h2, address strong
+{
+	color:#639;
+	font-family: "Arizonia", cursive;
+	font-size:40px;
+	letter-spacing:2px;
+	line-height:200%;
+}
+
+#modals .modal
+{
+	display:none;
+	
+	#target1
+	{
+		display:block;
+		padding-bottom:50px;
+	}
+}
+
+#main-images
+{
+	margin-top:50px;
+	
+	a
+	{
+		color:#fff;
+		display:block;
+		margin-bottom:7px;
+		position:relative;
+		
+		h4
+		{
+			background:rgba(0, 0, 0, 0.5);
+			color:#fff;
+			display:none;
+			padding:5px;
+			position:absolute;
+			left:2px;
+			top:2px;
+			z-index:100;
+			width:98%;
+		}
+		
+		&:hover
+		{
+			h4
+			{
+				display:block;
+			}
+		}
+	}
+	
+	#directions img, #ryan-krystyna-closeup
+	{
+		height:217px;
+	}
+	
+	
+	img
+	{
+		.box-shadow(0 1px 5px rgba(0,0,0,.25));
+		background:#fff;
+		padding:2px;
+		width:100%;
+	}
+	
+}
+
+footer
+{
+	background:#fff;
+	.box-shadow(0 1px 5px rgba(0,0,0,.25));
+	margin:50px auto;
+	padding:10px 0;
+	text-align:center;
+	
+	#footer-about, #location
+	{
+		padding:20px;
+	}
+	
+	#footer-about
+	{
+		border-bottom:1px dotted #ccc;
+		margin:0 50px;
+	}
+}

@@ -14,91 +14,156 @@
 	<meta name="author" content="Desperate for Money">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<link href='http://fonts.googleapis.com/css?family=Arizonia' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Sofia' rel='stylesheet' type='text/css'>	
-	<link rel="stylesheet" href="assets/styles.css">
+	<link href='http://fonts.googleapis.com/css?family=Sofia' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="assets/css/min/application.css" type="text/css" media="screen" title="no title" charset="utf-8">
 </head>
 
 <body>
 
-	<div id="home-content" class="container">
-		<div class="row">
-			
-			<div id="left-pics">
-				<a class="links" href="registries3.html" title="Registries">
+	<div class="container">
+		<div id="main-images" class="row">
+
+			<div class="span4">
+				<a href="#registries3-modal" data-toggle="modal" id="registries">
 					<h4>Registries</h4>
-					<img class="front-pics" src="pictures/left-top.jpg" alt="" />	
+					<img src="pictures/left-top.jpg" alt="" />	
 				</a>
-				
-				
-				<a class="links" href="rsvp2.html" title="RSVP">
+
+
+				<a href="#rsvp2-modal" data-toggle="modal" id="rsvp">
 					<h4>RSVP</h4>
-					<img class="front-pics" src="pictures/left-bottom2.jpg" alt="" />	
+					<img src="pictures/left-bottom2.jpg" alt="" />
 				</a>
-				
 			</div>
-			
-			<div id="right-pics">
-				<a class="links" href="reception.html" title="Reception Details">
+
+			<div class="span8">
+				<a href="#reception-modal" data-toggle="modal" id="reception-details">
 					<h4>Reception Details</h4>
-					<img class="front-pics" src="pictures/main.jpg" alt="" />	
+					<img src="pictures/main.jpg" alt="" />	
 				</a>
-				
-							
-				<div id="right-bottom">
-					<img class="front-pics" src="pictures/right-bottom2a.jpg" />
-					
-					<a class="links" href="directions.html" title="Directions">
-						<h4>Directions</h4>
-						<img class="front-pics" src="pictures/right-bottom1.jpg" alt="" />
-					</a>
+
+				<div class="row">
+					<div class="span4">
+						<img src="pictures/right-bottom2a.jpg" id="ryan-krystyna-closeup" />
+					</div>
+
+					<div class="span4">
+						<a href="#directions-modal" data-toggle="modal" id="directions">
+							<h4>Directions</h4>
+							<img src="pictures/right-bottom1.jpg" alt="" />
+						</a>
+					</div>
 				</div>
-				<div class="clear"></div>
-			</div>
-			<div class="clear"></div>
-		</div>
-	</div>
-	
-	<div class="container clear">
-		<div id="body-content">
-			<div class="guts">
-				
 			</div>
 		</div>
-	</div>
-	
-	<div class="container clear">
+
 		<div class="row">
-			<footer>
-				<div id="footer_name">
+			<footer class="span12">
+				<div id="footer-about">
 					<h1>Krystyna and Ryan</h1>
 					<p>Come Celebrate the Marriage of Ryan Staten Wood and Krystyna Marie Wood. </p>
 				</div>
 
-				<div class="pagebreak"></div>
-				<div id="church_address">
-					<h1 id="church_name">Trinity Alliance Church</h1>
-					<p>20639 State Highway 299 E</p>
-					<p>Redding, CA 96003</p>
+				<div id="location">
+					<address>
+						<strong>Trinity Alliance Church</strong><br />
+						20639 State Highway 299 E<br />
+						Redding, CA 96003
+					</address>
 					<p>Reception Will Follow</p>
 				</div>
 			</footer>
 		</div>
 	</div>
+
 	
-	<script src="assets/modernizr.js"></script>
-	<!-- JavaScript -->
-	<script>
-		Modernizr.load([
-			{
-				load: '//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js'
-			},
-			{
-				load: 'assets/scroll.js'
-			},
-			{
-  				load: 'assets/main.js'
-			}
-		]);
-	</script>
+	<div id="modals">
+		<div id="registries3-modal" class="modal hide fade">
+			<div class="modal-header">
+				<a class="close" data-dismiss="modal">×</a>
+				<h3>Registries</h3>
+			</div>
+			<div class="modal-body">
+				<h4><a href="http://www.target.com/wedd/registry/_c3tkODrzHfhQv1EwgqR3g">Target</a></h4>
+				<p>
+					Simply the home basics and not much more. Fortunately we have had the opportunity to raid a 
+					few houses for the extras lying around. Help us fill the cabinets with the things that we 
+					weren't able to scrounge!
+				</p>
+				<a href="http://www.target.com/wedd/registry/_c3tkODrzHfhQv1EwgqR3g">
+					<img id="target1" src="pictures/targetlogo.jpg" />
+				</a>
+
+				<h4>Paypal</h4>
+				<p>
+					Student loans are not fun. Hence there is Operation Ease Student Loan Burden.
+				</p>
+				<p>
+					If this a cause that you wish to donate to click the below Paypal button. 
+					You can donate with or without a Paypal account. There is place one the donation page for both options.
+				</p>
+				<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+					<input type="hidden" name="cmd" value="_s-xclick">
+					<input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----">
+					<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!" />
+				</form>
+			</div>
+		</div>
+
+		<div id="reception-modal" class="modal hide fade">
+			<div class="modal-header">
+				<a class="close" data-dismiss="modal">×</a>
+				<h3>Party Time!</h3>
+			</div>
+			<div class="modal-body">
+				<p>Reception/Celebration will follow the ceremony at Trinity Alliance Church</p>
+
+				<h3>The Celebration will include:</h3> 
+				<ul>
+					<li>Dancing</li>
+					<li>Desserts</li>
+					<li>Refreshments</li>
+					<li>Light food</li>
+				</ul>
+			</div>
+		</div>
+
+		<div id="rsvp2-modal" class="modal hide fade">
+			<div class="modal-header">
+				<a class="close" data-dismiss="modal">×</a>
+				<h3>RSVP by <span>February 26, 2012 </span></h3>
+			</div>
+			<div class="modal-body">
+				<iframe 
+					height="400" 
+					allowTransparency="true" 
+					frameborder="0" 
+					scrolling="no" 
+					style="width:100%;border:none"
+					src="http://rbn1357.wufoo.com/embed/s7x2r7/">
+
+					<a href="http://rbn1357.wufoo.com/forms/s7x2r7/">Fill out my Wufoo form!</a>
+				</iframe>
+			</div>
+		</div>
+
+		<div id="directions-modal" class="modal hide fade">
+			<div class="modal-header">
+				<a class="close" data-dismiss="modal">×</a>
+				<h3>Directions to the Celebration</h3>
+			</div>
+			<div class="modal-body">
+				<form action="http://maps.google.com/maps" method="get" target="_blank">
+				   <label for="saddr">Enter your Address</label>
+				   <input type="text" name="saddr" />
+				   <input type="hidden" name="daddr" value="20639 State Highway 299 E, Redding, CA 96003" />
+				   <input type="submit" value="Get directions" class="btn btn-info" />
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script src="assets/js/min/application-ck.js"></script>
 </body>
 </html>
